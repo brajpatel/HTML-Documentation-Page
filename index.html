@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css"/>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+<nav id="navbar">
+    <header>HTML Documentation</header>
+    <ul>
+        <li><a class="nav-link" href="#main-doc">Introduction</a></li>
+        <li><a class="nav-link" href="#HTML_Documents">HTML documents</a></li>
+        <li><a class="nav-link" href="#HTML_Headings">HTML headings</a></li>
+        <li><a class="nav-link" href="#HTML_Paragraphs">HTML paragraphs</a></li>
+        <li><a class="nav-link" href="#Hello_World">Hello world</a></li>
+        <li><a class="nav-link" href="#HTML_Links">HTML links</a></li>
+        <li><a class="nav-link" href="#HTML_Images">HTML images</a></li>
+        <li><a class="nav-link" href="#View_HTML_Source">View HTML source</a></li>
+        <li><a class="nav-link" href="#Reference">Reference</a></li>
+    </ul>
+</nav>
+
+<main id="main-doc">
+    <section class="main-section" id="Introduction">
+        <header>Introduction</header>
+        <article>
+            <p>HTML stands for Hyper Text Markup Language and is used to describes how a web page should be structured. HTML elements are the building blocks of HTML documents which web browsers receive from a web server or local storage.</p>
+            <p>We use a start tag, some content and an end tag (&lt; &gt;"content"&lt;/&gt;) to define each element.</p>
+            <p>Here are some commonly used HTML tags:</p>
+            <ul>
+                <li><strong>&lt;HTML&gt;...&lt;/HTML&gt;</strong> - the entire HTML document</li>
+                <li><strong>&lt;head&gt;...&lt;/head&gt;</strong> - the head of the document</li>
+                <li><strong>&lt;title&gt;...&lt;/title&gt;</strong> - specifies a title for the HTML page shown in the browsers tab</li>
+                <li><strong>&lt;body&gt;...&lt;/body&gt;</strong> - where the web pages content goes</li>
+                <li><strong>&lt;h1-h6&gt;...&lt;/h1-/h6&gt;</strong> - levels of heading</li>
+                <li><strong>&lt;p&gt;...&lt;/p&gt;</strong> - paragraph, create a new tag for each paragraph</li>
+                <li><strong>&lt;br&gt;</strong> - line break</li>
+            </ul>
+            <p>Whether you want to learn to code to learn something new, or for career purposes, HTML is a great place to get yourself started.</p>
+            <p>To create your very own web page, all you need is a web browser (E.g. Chrome) and a simple text editor like Notepad (PC) or TextEdit (Mac).</p>
+        </article>
+    </section>
+
+    <section class="main-section" id="HTML_Documents">
+        <header>HTML Documents</header>
+        <article>
+            <p>All documents must be have a <span class="paragraph-tags">&lt;!DOCTYPE&gt;</span> declaration (only appears once at top of page). This represents the document type and helps the browsers to display the web page correctly. The <span class="paragraph-tags">&lt;html&gt;</span> element is the root element of the HTML page.</p>
+            <p>Here's what the declaration for HTML5 looks like:</p>
+            <code>&lt;<span class="doctype">!DOCTYPE</span> <span class="html-tag">html</span>&gt;
+                <br>
+                &lt;<span class="html-tag">html</span>&gt;
+                <br><br>
+                &lt;/<span class="html-tag">html</span>&gt;
+            </code>
+            <p>To save your web page, it must have the file extension <span class="paragraph-tags">.htm</span> or <span class="paragraph-tags">.html</span>. There is no difference between them, both work.</p>
+        </article>
+    </section>
+
+    <section class="main-section" id="HTML_Headings">
+        <header>HTML Headings</header>
+        <article>
+            <p>Headings are useful for showing the starting point of a section or topic and are defined by the <span class="paragraph-tags">&lt;h1&gt;</span>> to <span class="paragraph-tags">&lt;h6&gt;</span> tags.</p>
+            <p><span class="paragraph-tags">&lt;h1&gt;</span> is the heading with the most importance and should only be used once in a web page. Subsequent headings having less importance all the way down to <span class="paragraph-tags">&lt;h6&gt;</span>.</p>
+            <code><span class="content-tags">&lt;h1&gt;</span>This is the most important heading 1<span class="content-tags">&lt;/h1&gt;</span>
+                <br>
+                <span class="content-tags">&lt;h2&gt;</span>This is heading 2<span class="content-tags">&lt;/h2&gt;</span>
+                <br>
+                <span class="content-tags">&lt;h3&gt;</span>This is heading 3<span class="content-tags">&lt;/h3&gt;</span>
+                <br>
+                <span class="content-tags">&lt;h4&gt;</span>This is heading 4<span class="content-tags">&lt;/h4&gt;</span>
+                <br>
+                <span class="content-tags">&lt;h5&gt;</span>This is heading 5<span class="content-tags">&lt;/h5&gt;</span>
+                <br>
+                <span class="content-tags">&lt;h6&gt;</span>This is least important heading 6<span class="content-tags">&lt;/h6&gt;</span></code>
+        </article>
+    </section>
+
+    <section class="main-section" id="HTML_Paragraphs">
+        <header>HTML Paragraphs</header>
+        <article>
+            <p>The <span class="paragraph-tags">&lt;p&gt;</span> tag is used to define HTML paragraphs. Anything between the opening <span class="paragraph-tags">&lt;p&gt;</span> tag and ending <span class="paragraph-tags">&lt;/p&gt;</span> tag is part of the paragraph.</p>
+            <p>A paragraph always starts on a new line with browsers automatically adding a small margin before and after it.</p>
+            <code><span class="content-tags">&lt;p&gt;</span>This is a paragraph.<span class="content-tags">&lt;/p&gt;</span>
+                <br>
+                <span class="content-tags">&lt;p&gt;</span>This is also a paragraph.<span class="content-tags">&lt;/p&gt;</span>
+            </code>
+        </article>
+    </section>
+
+    <section class="main-section" id="Hello_World">
+        <header>Hello World</header>
+        <article>
+            <p>We've already covered enough for you to be able to write your very first lines of HTML code for your web page. Here's what a simple HTML document looks like:</p>
+            <code>&lt;<span class="doctype">!DOCTYPE</span> <span class="html-tag">html</span>&gt;
+                <br>
+                &lt;<span class="html-tag">html</span>&gt;
+                <br><br>
+                <span class="head-tag">&lt;head&gt;</span>
+                <br>
+                <span class="title-tag">&lt;title&gt;</span>Hello World<span class="title-tag">&lt;/title&gt;</span>
+                <br>
+                <span class="head-tag">&lt;/head&gt;</span>
+                <br><br>
+                <span class="head-tag">&lt;body&gt;</span>
+                <br><br>
+                <span class="content-tags">&lt;h1&gt;</span>My first heading<span class="content-tags">&lt;/h1&gt;</span>
+                <br>
+                <span class="content-tags">&lt;p&gt;</span>My first paragraph<span class="content-tags">&lt;/p&gt;</span>
+                <br><br>
+                <span class="content-tags">&lt;p&gt;</span>My second paragraph<span class="content-tags">&lt;/p&gt;</span>
+                <br><br>
+                <span class="head-tag">&lt;/body&gt;</span>
+                <br>
+                &lt;/<span class="html-tag">html</span>&gt;
+            </code>
+            <p>After saving your work using the <span class="paragraph-tags">.htm</span> or <span class="paragraph-tags">.html</span> file extensions, open it up in your browser to see what youve created.</p>
+        </article>
+    </section>
+
+    <section class="main-section" id="HTML_Links">
+        <header>HTML Links</header>
+        <article>
+            <p>Links are added to web pages using the <span class="paragraph-tags">&lt;a&gt;</span> tag. Just like <a href="#HTML_Links">this one</a>. We can specify the destination of the link by using the <span class="paragraph-tags">href</span> attribute or make the link dead by adding a '#'.<br>Attributes are used to provide additional information about a HTML element.</p>
+            <p>We can open and close tags within other tags. Here's what that might look like:</p>
+            <code><span class="content-tags">&lt;p&gt;</span>This paragraph has a <span class="link-tag">&lt;a</span> <span class="attribute-color">href</span>="#"<span class="link-tag">&gt;</span>link<span class="link-tag">&lt;/a&gt;</span> in it.<span class="content-tags">&lt;/p&gt;</span>
+                <br>
+                <br>
+            This paragraph has a <a href="#HTML_Links"><span class="html-tag">link</span></a> in it.</code>
+        </article>
+    </section>
+
+    <section class="main-section" id="HTML_Images">
+        <header>HTML Images</header>
+        <article>
+            <p>Images in HTML are defined using the <span class="paragraph-tags">&lt;img&gt;</span> tag. This tag is self-closing, meaning a separate opening and closing tag is not necessary.</p>
+            <p>The <span class="paragraph-tags">src</span> attribute lets us specify the source file. And the <span class="paragraph-tags">alt</span> attribute (alternative text) lets us choose the text viewers see should the image fail to load properly. We can also change the <span class="paragraph-tags">height</span> and <span class="paragraph-tags">width</span> of the image we want to use so it fits better in our web page.</p>
+            <p>Here's what this might look like:</p>
+            <code><span class="link-tag">&lt;img</span> <span class="attribute-color">src</span>="happy-puppy.jpg" <span class="attribute-color">alt</span>="A happy puppy" <span class="attribute-color">width</span>="150px" <span class="attribute-color">height</span>="188px"<span class="link-tag">&gt;</span>
+                <br>
+                <br>
+                <img src="https://i.pinimg.com/originals/a4/0e/cc/a40ecce95a827d8f0b9afaf2eed11480.jpg" alt="A happy puppy" width="150px" height="188px">
+                <br>
+                <br>
+                <img src="" alt="A happy puppy">
+            </code>
+        </article>
+    </section>
+
+    <section class="main-section" id="View_HTML_Source">
+        <header>View HTML Source</header>
+        <article>
+            <p>Have you ever seen a web page and wondered, "How exactly have they done that?".</p>
+            <h3>View HTML source code:</h3>
+            <p>Right click on a web page and select <span class="paragraph-tags">"view page source"</span> (in chrome) or similar in other browsers. This will open a window that contains the HTML source code of that page.</p>
+            <h3>Inspect a HTML element:</h3>
+            <p>Right click on an element or blank area and select <span class="paragraph-tags">"Inspect"</span> or <span>"Inspect element"</span> (or similar). You'll be able to see what elements are made of and also how they have been styled using CSS (Cascading Style Sheets). You can also edit parts of the HTML and CSS on-the-fly in the panel that opens.</p>
+        </article>
+    </section>
+
+    <section class="main-section" id="Reference">
+        <header>Reference</header>
+        <article>
+            <ul>
+                <li>Aspects of this document have been taken from <a target=_blank href="https://www.w3schools.com/html/default.asp" class="ref-link">w3schools</a></li>
+            </ul>
+        </article>
+    </section>
+    </main>
+</body>
+<script src="app.js"></script>
+</html>

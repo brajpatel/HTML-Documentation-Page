@@ -1,0 +1,212 @@
+/* ===== fonts ===== */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+
+/* ===== global ===== */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(247, 247, 247);
+}
+
+header {
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+p {
+    color:rgb(55, 55, 55);
+    margin-left: 4%;
+    margin-right: 4%;
+    font-family: 'Quicksand', sans-serif;
+}
+
+h3 {
+    font-weight: 400;
+    color: rgb(48, 48, 48);
+}
+
+/* ===== navbar ===== */
+#navbar {
+    position: fixed;
+    min-width: 260px;
+    top: 0px;
+    left: 0px;
+    max-width: 280px;
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    border-right: 2px rgb(153, 153, 153) solid;
+    margin: 0;
+}
+
+#navbar header {
+    height: 50px;
+    text-align: center;
+    padding-top: 25px;
+}
+
+#navbar ul {
+    font-family: 'Karla', sans-serif;
+    height: 85%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#navbar li {
+    list-style: none;
+    position: relative;
+    border-top: 1px rgb(27, 27, 27) solid;
+    height: 45px;
+    text-align: left;
+    padding-top: 17px;
+    margin-left: -40px;
+    font-size: 1.3rem;
+    padding-left: 15px;
+}
+
+#navbar li:hover {
+    background-color: rgb(223, 223, 223);
+    transition: cubic-bezier(0.455, 0.03, 0.515, 0.955), 0.5s;
+}
+
+#navbar li:hover a {
+    transform: translateX(10px);
+    transition: cubic-bezier(0.455, 0.03, 0.515, 0.955), 0.5s;
+}
+
+#navbar a {
+    display: block;
+    color: rgb(77, 77, 77);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* ===== main-doc ===== */
+#main-doc {
+    position: absolute;
+    margin-left: 300px;
+    padding: 20px;
+    text-align: left;
+}
+
+#main-doc header {
+    font-size: 2rem;
+    margin-top: 15px;
+}
+
+#main-doc ul {
+    font-family: 'Quicksand', sans-serif;
+}
+
+#Introduction ul {
+    color:rgb(88, 88, 88);
+    margin-left: 50px;
+}
+
+#HTML_Images img {
+    padding-left: 5%;
+}
+
+/* ===== code and tags ===== */
+code {
+    display: block;
+    line-height: 1.4;
+    background-color: rgb(44, 44, 44);
+    color: rgb(207, 207, 207);
+    margin-left: 8%;
+    margin-right: 8%;
+    padding: 25px;
+    border-radius: 3px;
+}
+
+.paragraph-tags {
+    color: rgb(0, 138, 46);
+    background-color: rgb(231, 231, 231);
+    font-weight: 600;
+}
+
+.doctype {
+    color: rgba(241, 28, 0, 0.945);
+}
+
+.html-tag {
+    color: rgb(63, 99, 197);
+}
+
+.head-tag {
+    color: rgb(32, 165, 180);
+}
+
+.title-tag {
+     color: rgb(27, 172, 27);
+}
+
+.content-tags {
+    color: rgb(231, 164, 39);
+}
+
+.link-tag {
+    color: rgb(211, 211, 25);
+}
+
+.attribute-color {
+    color: rgb(212, 42, 136);
+}
+ 
+
+/* ===== media queries ===== */
+@media (max-width: 800px) {
+    #navbar {
+        position: absolute;
+        max-width: 100%;
+        width: 100%;
+        height: 281px;
+        top: 0;
+        margin: 0;
+        padding: 0;
+        z-index: 1;
+        border: none;
+        border-bottom: 1px rgb(85, 85, 85) solid;
+    }
+
+    #navbar ul {
+        height: 190px;
+    }
+
+    #main-doc {
+        position: relative;
+        margin-left: 0px;
+        margin-top: 270px;
+    }
+}
+
+@media (max-width: 400px) {
+    #main-doc {
+        margin-left: -10px;
+    }
+
+    code {
+        width: 100%;
+        min-width: 240px;
+        margin-left: -20px;
+        padding: 15px;
+        padding-left: 10px;
+        padding-right: 45px;
+    }
+}
+
+/* ===== link ===== */
+#Reference ul {
+    color: rgb(88, 88, 88);
+    margin-left: 50px;
+}
+
+.ref-link {
+    cursor: pointer;
+}
